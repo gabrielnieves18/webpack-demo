@@ -3,6 +3,7 @@
 /test/browsertest/js
 /test/fixtures/temp-cache-fixture
 /dist
+/build
 .DS_Store
 
 # Editor directories and files
