@@ -1,3 +1,18 @@
+# Webpack
+/test/js
+/test/browsertest/js
+/test/fixtures/temp-cache-fixture
+/dist
+.DS_Store
+
+# Editor directories and files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.idea
+.vscode
+
 # Logs
 logs
 *.log
