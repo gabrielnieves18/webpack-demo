@@ -7,8 +7,8 @@
     "build": "webpack",
     "dashboard": "webpack-dashboard -- webpack-dev-server --env.target development",
     "lint:js": "eslint webpack.*.js app/ --cache",
-    "precommit": "npm lint:js",
-    "prepush": "npm lint:js",
+    "precommit": "npm run lint:js",
+    "prepush": "npm run lint:js",
     "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env.target development\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
