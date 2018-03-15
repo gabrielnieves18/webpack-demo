@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --config config/webpack.config.js",
     "dashboard": "webpack-dashboard -- webpack-dev-server --env.target development",
-    "lint:js": "eslint webpack.*.js app/ --cache",
+    "lint:js": "eslint config/webpack.config.js app/ --cache",
     "precommit": "lint-staged",
     "prepush": "npm run lint:js",
-    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --env.target development\"",
+    "start": "nodemon --watch config/webpack.config.js --exec \"webpack-dev-server --env.target development --config config/webpack.config.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

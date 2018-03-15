@@ -10,8 +10,8 @@ const parts = require("./webpack.parts");
 const webpack = require("webpack");
 
 const PATH = {
-	app: path.resolve(__dirname, "app"),
-	build: path.resolve(__dirname, "build"),
+	app: path.resolve(__dirname, "../app"),
+	build: path.resolve(__dirname, "../build"),
 };
 
 
@@ -101,8 +101,10 @@ const developmentConfig = merge([
 module.exports = (env={target: null}) => {
 	
 	if (env.target === "production") {
+		console.log("\n\nRunning Production\n\n");
 		return( merge([commonConfig, productionConfig]) );
 	}
 
+	console.log("\n\nRunning Development\n\n");
 	return( merge([commonConfig, developmentConfig]) );
 };
