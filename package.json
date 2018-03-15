@@ -8,10 +8,7 @@
     "dashboard": "webpack-dashboard -- webpack-dev-server --env.target development",
     "lint:js": "eslint webpack.*.js app/ --cache",
     "lint-staged": {
-      "*.js": [
-        "eslint --cache",
-        "git add"
-      ]
+      
     },
     "precommit": "lint-staged",
     "prepush": "npm run lint:js",
